@@ -109,24 +109,3 @@ class LinkedList:
                 min = current.next.data
             current = current.next     
         return min
-
-
-new_list = LinkedList()
-new_list.addFront(1)
-new_list.addFront(5)
-new_list.addFront(10)
-new_list.addEnd(0)
-new_list.addEnd(100)
-new_list.addAfter(5, 103)
-new_list.popFront()
-new_list.addEnd(15)
-
-for item in new_list:
-    print(item)
-
-print("\n")
-new_list.sort(reverse=True)
-
-for item in new_list:
-    print(item)
-
