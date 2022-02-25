@@ -35,6 +35,9 @@ class LinkedList:
     
     def addEnd(self, data):
         new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+            return
         last = self.head
         while last.next:
             last = last.next
@@ -109,3 +112,11 @@ class LinkedList:
                 min = current.next.data
             current = current.next     
         return min
+
+
+
+
+new_list = LinkedList()
+new_list.addFront(5)
+
+print(new_list.head.data)
