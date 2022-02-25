@@ -129,13 +129,3 @@ class DoublyLinkedList:
             if item > max:
                 max = item
         return max
-
-list = DoublyLinkedList()
-list.addFront(5)
-list.addFront(10)
-list.addEnd(9)
-list.addEnd(4)
-list.addAfter(9, 6)
-list.sort(reverse=True)
-for item in list:
-    print(item)
