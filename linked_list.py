@@ -112,11 +112,3 @@ class LinkedList:
                 min = current.next.data
             current = current.next     
         return min
-
-
-
-
-new_list = LinkedList()
-new_list.addFront(5)
-
-print(new_list.head.data)
